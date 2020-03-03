@@ -44,18 +44,23 @@ public class PruebasUnitarias {
     @After
     public void tearDown() {
     } 
+    
+    //Realiza el calculo de la compra de productos pero sin aplicar descuentos
     @Test
     public void probarSinDescuento(){
       double esperado= 380;
         assertEquals(esperado, objeto1.descuento(2), esperado);
     }
     
+    
+    //Prueba el descuento de 5%
     @Test
     public void probarDescuento1(){
       double esperado= 655.5;
         assertEquals(esperado, objeto2.descuento(3), esperado);
     }
     
+    //Prueba el descuento de 8%
     @Test
     public void probarDescuento2(){
       double esperado= 1711.2;
